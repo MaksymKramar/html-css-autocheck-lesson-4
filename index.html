@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задание 1 Текст: text-indent -->
+    <p>Свойство <em>text-indent</em> определяет размер отступа (пустого места) перед строкой в текстовом блоке. По умолчанию
+        это свойство управляет отступом только первой строки блока.</p>
+    
+    <!-- Задание 2 Текст: наследование свойств column-count и text-indent -->
+    <div class="columns">
+        <p>CSS свойство <em>column-count</em> разбивает содержимое элемента на заданное число столбцов.
+        </p>
+        <p>Свойство CSS <em>column-width</em> устанавливает ширину столбца в многоколоночном макете. В контейнере будет
+            столько столбцов, сколько может поместиться. Если ширина контейнера уже указанного значения, ширина отдельного
+            столбца будет меньше, чем заявленная ширина столбца.</p>
+        <p>Свойство CSS <em>column-gap</em> устанавливает размер промежутка между столбцами элемента.
+        </p>
+    </div>
+    <!-- Задание 3 Текст: горизонтальное выравнивание -->
+    <div class="left">
+        <button>да</button>
+        <button>нет</button>
+        <button>отменить</button>
+    </div>
+    <div class="right">
+        <button>да</button>
+        <button>нет</button>
+        <button>отменить</button>
+    </div>
+    <div class="center">
+        <button>да</button>
+        <button>нет</button>
+        <button>отменить</button>
+    </div>
+    <div class="justify">
+        Строчные элементы ведут себя подобно буквам текста и к ним можно применять те же самые css правила. Например button
+        : <button>да</button>
+        <button>нет</button>
+        <button>отменить</button>. Такое поведение можно использовать для центрирования кнопок, разместив кнопку внутри
+        обертки и задав text-align: center родительскому блоку.
+    </div>
+    <!-- Задание 4 Текст: межстрочный интервал -->
+    <p>Свойство CSS line-height устанавливает величину пространства между строками, например в тексте. </p>
+    <!-- Задание 5 Текст: вертикальное выравнивание - top -->
+    <div class="boxes">
+        <div class="box">t</div>
+        <div class="box box-48">o</div>
+        <div class="box box-72">p</div>
+    </div>
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card card-48"></div>
+        <div class="card card-72"></div>
+    </div>
+    <div class="letter">
+        top
+    </div>
+    <!-- Задание 6 Текст: вертикальное выравнивание - middle -->
+    <div class="boxes">
+        <div class="box">m</div>
+        <div class="box box-48">i</div>
+        <div class="box box-72">d</div>
+        <div class="box box-48">d</div>
+        <div class="box">l</div>
+        <div class="box box-48">e</div>
+    </div>
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card card-48"></div>
+        <div class="card card-72"></div>
+        <div class="card card-48"></div>
+        <div class="card"></div>
+        <div class="card card-48"></div>
+    </div>
+    <div class="letter">
+        middle
+    </div>
+    <!-- Задание 7 Текст: вертикальное выравнивание - bottom -->
+    <div class="boxes">
+        <div class="box">b</div>
+        <div class="box box-48">o</div>
+        <div class="box box-72">t</div>
+        <div class="box box-48">t</div>
+        <div class="box">o</div>
+        <div class="box box-48">m</div>
+    </div>
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card card-48"></div>
+        <div class="card card-72"></div>
+        <div class="card card-48"></div>
+        <div class="card"></div>
+        <div class="card card-48"></div>
+    </div>
+    <div class="letter">
+        bottom
+    </div>
+    <!-- Задание 8 Текст: преобразование регистра text-transform -->
+    <div>
+        <div data-transform="none"><span>NoNe</span></div>
+        <div data-transform="uppercase"><span>uppercase</span></div>
+        <div data-transform="lowercase"><span>LOWERCASE</span></div>
+        <div data-transform="capitalize"><span>capitalize</span></div>
+    </div>
+    <!-- Задание 9 Текст: оформление текста text-decoration -->
+    <div>
+        <div class="up" data-line="overline" data-style="wavy" data-color="red">
+            <span>Overline</span>
+        </div>
+        <div class="through" data-line="line-through" data-style="dashed" data-color="green">
+            <span>Line-through</span>
+        </div>
+        <div class="down" data-line="underline" data-style="solid" data-color="blue">
+            <span>Underline</span>
+        </div>
+        <div class="no" data-line="none">
+            <span>None</span>
+        </div>
+        <div class="combi" data-line="underline overline" data-style="double" data-color="grey">
+            <span>Combination</span>
+        </div>
+    </div>
+    <!-- Задание 10 Текст: тень для текста с помощью свойства text-shadow -->
+    <ol>
+        <li class="one" data-x="3px" data-y="3px" data-blur="2px" data-color="hsla(0, 0%, 0%, .5)">
+            CSS-свойство text-shadow добавляет тени к тексту и всем элементам text-decoration.
+        </li>
+        <li>К одному тексту можно применить несколько теней:
+            <span class="rings" data-colors="blue black red green">O</span>
+        </li>
+    </ol>
+    <!-- Задание 11 Текст: word-spacing (расстояния между словами) -->
+    <ol class="items">
+        <li class="item item-less" data-wordspacing="-.25rem">
+            1rem соответсвует размеру шрифта, заданному в body, а .25rem равна 1/4 размера шрифта и ширине пробела между
+            словами
+        </li>
+        <li class="item">
+            <p>CSS-свойство word-spacing наследуется</p>
+        </li>
+        <li class="item item-normal" data-wordspacing="normal">
+            <p>CSS-свойство word-spacing устанавливает длину пробела между словами и между тегами. </p>
+        </li>
+    </ol>
+    <!-- Задание 12 Текст: расстояния между буквами -->
+    <ol class="items">
+        <li class="item item-less" data-letterspacing="-.1rem">
+            Свойство letter-spacing определяет межбуквенное расстояние в тексте.
+        </li>
+        <li class="item">
+            <p>CSS свойство letter-spacing наследуется.</p>
+        </li>
+        <li class="item item-normal" data-letterspacing="normal">
+            В отличие от значения 0, ключевое слово normal позволяет браузеру изменить расстояние между буквами для
+            выравнивания текста.
+        </li>
+    </ol>
+
+
+
+</body>
+</html>
